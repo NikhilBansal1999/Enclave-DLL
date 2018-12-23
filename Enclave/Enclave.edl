@@ -1,0 +1,18 @@
+enclave {
+    include "../Enclave/Enclave.h"
+
+    trusted {
+        /* define ECALLs here. */
+        public link_info* map_library([in, string]char* str);
+        public void get_function(long info_struct,[in, string]char *func_name,int num);
+    };
+
+    untrusted {
+        /* define OCALLs here. */
+        void ocall_print([in, string]const char* str);
+        char* read_from_file(size_t size_elem,size_t num_elem,[in, string]char* lib_name,long offset,[in, out]int* data_sent);
+        void protect_memory(long addr, size_t len, int prot);
+        long get_pagesize();
+        void ocall_sleep(int sec);
+    };
+};
