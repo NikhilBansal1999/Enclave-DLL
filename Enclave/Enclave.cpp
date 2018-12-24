@@ -385,7 +385,7 @@ void get_function(long info_struct,char *func_name,int num)
       int (*fibo)(int);
       fibo=(int (*)(int))addr;
       char* output=(char*)malloc(100);
-      snprintf(output,100,"%d\n\0",(*fibo)(num));
+      snprintf(output,100,"%d\n",(*fibo)(num));
       ocall_print(output);
     }
   }

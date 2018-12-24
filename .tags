@@ -1,0 +1,172 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SGX_SDK	/home/nikhil/Enclave-DLL/Makefile	/^SGX_SDK ?= \/opt\/intel\/sgxsdk$/;"	macro	line:34
+SGX_MODE	/home/nikhil/Enclave-DLL/Makefile	/^SGX_MODE ?= SIM$/;"	macro	line:35
+SGX_ARCH	/home/nikhil/Enclave-DLL/Makefile	/^SGX_ARCH ?= x64$/;"	macro	line:36
+SGX_ARCH	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_ARCH := x86$/;"	macro	line:39
+SGX_ARCH	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_ARCH := x86$/;"	macro	line:41
+SGX_COMMON_CFLAGS	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_COMMON_CFLAGS := -m32$/;"	macro	line:45
+SGX_LIBRARY_PATH	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_LIBRARY_PATH := $(SGX_SDK)\/lib$/;"	macro	line:46
+SGX_ENCLAVE_SIGNER	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_ENCLAVE_SIGNER := $(SGX_SDK)\/bin\/x86\/sgx_sign$/;"	macro	line:47
+SGX_EDGER8R	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_EDGER8R := $(SGX_SDK)\/bin\/x86\/sgx_edger8r$/;"	macro	line:48
+SGX_COMMON_CFLAGS	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_COMMON_CFLAGS := -m64$/;"	macro	line:50
+SGX_LIBRARY_PATH	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_LIBRARY_PATH := $(SGX_SDK)\/lib64$/;"	macro	line:51
+SGX_ENCLAVE_SIGNER	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_ENCLAVE_SIGNER := $(SGX_SDK)\/bin\/x64\/sgx_sign$/;"	macro	line:52
+SGX_EDGER8R	/home/nikhil/Enclave-DLL/Makefile	/^	SGX_EDGER8R := $(SGX_SDK)\/bin\/x64\/sgx_edger8r$/;"	macro	line:53
+Urts_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^	Urts_Library_Name := sgx_urts_sim$/;"	macro	line:71
+Urts_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^	Urts_Library_Name := sgx_urts$/;"	macro	line:73
+App_Cpp_Files	/home/nikhil/Enclave-DLL/Makefile	/^App_Cpp_Files := App\/App.cpp App\/sgx_utils\/sgx_utils.cpp$/;"	macro	line:77
+App_Include_Paths	/home/nikhil/Enclave-DLL/Makefile	/^App_Include_Paths := -IApp -I$(SGX_SDK)\/include$/;"	macro	line:79
+App_C_Flags	/home/nikhil/Enclave-DLL/Makefile	/^App_C_Flags := $(SGX_COMMON_CFLAGS) -fPIC -Wno-attributes $(App_Include_Paths)$/;"	macro	line:81
+App_Cpp_Flags	/home/nikhil/Enclave-DLL/Makefile	/^App_Cpp_Flags := $(App_C_Flags) -std=c++11$/;"	macro	line:95
+App_Link_Flags	/home/nikhil/Enclave-DLL/Makefile	/^App_Link_Flags := $(SGX_COMMON_CFLAGS) -L$(SGX_LIBRARY_PATH) -l$(Urts_Library_Name) -lpthread$/;"	macro	line:96
+App_Cpp_Objects	/home/nikhil/Enclave-DLL/Makefile	/^App_Cpp_Objects := $(App_Cpp_Files:.cpp=.o)$/;"	macro	line:104
+App_Name	/home/nikhil/Enclave-DLL/Makefile	/^App_Name := app$/;"	macro	line:106
+Trts_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^	Trts_Library_Name := sgx_trts_sim$/;"	macro	line:111
+Service_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^	Service_Library_Name := sgx_tservice_sim$/;"	macro	line:112
+Trts_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^	Trts_Library_Name := sgx_trts$/;"	macro	line:114
+Service_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^	Service_Library_Name := sgx_tservice$/;"	macro	line:115
+Crypto_Library_Name	/home/nikhil/Enclave-DLL/Makefile	/^Crypto_Library_Name := sgx_tcrypto$/;"	macro	line:117
+Enclave_Cpp_Files	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Cpp_Files := Enclave\/Enclave.cpp$/;"	macro	line:120
+Enclave_Include_Paths	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Include_Paths := -IEnclave -I$(SGX_SDK)\/include -I$(SGX_SDK)\/include\/tlibc -I$(SGX_SDK)\/include\/stlport$/;"	macro	line:122
+Enclave_C_Flags	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_C_Flags := $(SGX_COMMON_CFLAGS) -nostdinc -fvisibility=hidden -fpie -fstack-protector $(Enclave_Include_Paths)$/;"	macro	line:124
+Enclave_Cpp_Flags	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Cpp_Flags := $(Enclave_C_Flags) -std=c++03 -nostdinc++$/;"	macro	line:125
+Enclave_Link_Flags	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Link_Flags := $(SGX_COMMON_CFLAGS) -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L$(SGX_LIBRARY_PATH) \\$/;"	macro	line:126
+Enclave_Cpp_Objects	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Cpp_Objects := $(Enclave_Cpp_Files:.cpp=.o)$/;"	macro	line:134
+Enclave_Name	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Name := enclave.so$/;"	macro	line:136
+Signed_Enclave_Name	/home/nikhil/Enclave-DLL/Makefile	/^Signed_Enclave_Name := enclave.signed.so$/;"	macro	line:137
+Enclave_Config_File	/home/nikhil/Enclave-DLL/Makefile	/^Enclave_Config_File := Enclave\/Enclave.config.xml$/;"	macro	line:138
+Build_Mode	/home/nikhil/Enclave-DLL/Makefile	/^Build_Mode = HW_RELEASE$/;"	macro	line:143
+global_eid	/home/nikhil/Enclave-DLL/App/App.cpp	/^sgx_enclave_id_t global_eid = 0;$/;"	variable	line:12
+get_pagesize	/home/nikhil/Enclave-DLL/App/App.cpp	/^long get_pagesize()$/;"	function	line:15	signature:()
+protect_memory	/home/nikhil/Enclave-DLL/App/App.cpp	/^void protect_memory(long addr, size_t len, int prot)$/;"	function	line:20	signature:(long addr, size_t len, int prot)
+ocall_print	/home/nikhil/Enclave-DLL/App/App.cpp	/^void ocall_print(const char* str)$/;"	function	line:28	signature:(const char* str)
+read_from_file	/home/nikhil/Enclave-DLL/App/App.cpp	/^char* read_from_file(size_t size_elem,size_t num_elem,char* lib_name,long offset,int *data_sent)$/;"	function	line:33	signature:(size_t size_elem,size_t num_elem,char* lib_name,long offset,int *data_sent)
+ocall_sleep	/home/nikhil/Enclave-DLL/App/App.cpp	/^void ocall_sleep(int sec)$/;"	function	line:64	signature:(int sec)
+main	/home/nikhil/Enclave-DLL/App/App.cpp	/^int main(int argc, char const *argv[])$/;"	function	line:69	signature:(int argc, char const *argv[])
+a	/home/nikhil/Enclave-DLL/App/test_lib.c	/^int a=0,b=1,n=2;$/;"	variable	line:2
+b	/home/nikhil/Enclave-DLL/App/test_lib.c	/^int a=0,b=1,n=2;$/;"	variable	line:2
+n	/home/nikhil/Enclave-DLL/App/test_lib.c	/^int a=0,b=1,n=2;$/;"	variable	line:2
+add	/home/nikhil/Enclave-DLL/App/test_lib.c	/^int add(int c1,int c2)$/;"	function	line:3	signature:(int c1,int c2)
+loop	/home/nikhil/Enclave-DLL/App/test_lib.c	/^int loop(int num)$/;"	function	line:7	signature:(int num)
+fibonacci	/home/nikhil/Enclave-DLL/App/test_lib.c	/^int fibonacci(int num)$/;"	function	line:17	signature:(int num)
+SGX_UTILS_H_	/home/nikhil/Enclave-DLL/App/sgx_utils/sgx_utils.h	/^#define SGX_UTILS_H_$/;"	macro	line:2
+TRUE	/home/nikhil/Enclave-DLL/App/sgx_utils/sgx_utils.cpp	/^# define TRUE /;"	macro	line:7	file:
+FALSE	/home/nikhil/Enclave-DLL/App/sgx_utils/sgx_utils.cpp	/^# define FALSE /;"	macro	line:11	file:
+print_error_message	/home/nikhil/Enclave-DLL/App/sgx_utils/sgx_utils.cpp	/^void print_error_message(sgx_status_t ret) {$/;"	function	line:15	signature:(sgx_status_t ret)
+initialize_enclave	/home/nikhil/Enclave-DLL/App/sgx_utils/sgx_utils.cpp	/^int initialize_enclave(sgx_enclave_id_t* eid, const std::string& launch_token_path, const std::string& enclave_name) {$/;"	function	line:24	signature:(sgx_enclave_id_t* eid, const std::string& launch_token_path, const std::string& enclave_name)
+is_ecall_successful	/home/nikhil/Enclave-DLL/App/sgx_utils/sgx_utils.cpp	/^bool is_ecall_successful(sgx_status_t sgx_status, const std::string& err_msg,$/;"	function	line:74	signature:(sgx_status_t sgx_status, const std::string& err_msg, sgx_status_t ecall_return_value)
+align_down	/home/nikhil/Enclave-DLL/Enclave/Enclave.cpp	/^long align_down(long addr, long size)$/;"	function	line:8	signature:(long addr, long size)
+align_up	/home/nikhil/Enclave-DLL/Enclave/Enclave.cpp	/^long align_up(long addr,long size)$/;"	function	line:14	signature:(long addr,long size)
+map_library	/home/nikhil/Enclave-DLL/Enclave/Enclave.cpp	/^link_info* map_library(char* lib_name)$/;"	function	line:27	signature:(char* lib_name)
+get_function	/home/nikhil/Enclave-DLL/Enclave/Enclave.cpp	/^void get_function(long info_struct,char *func_name,int num)$/;"	function	line:365	signature:(long info_struct,char *func_name,int num)
+Elf64_Half	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef uint16_t Elf64_Half;$/;"	typedef	line:2
+Elf64_Word	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef uint32_t Elf64_Word;$/;"	typedef	line:3
+Elf64_Sword	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef	int32_t  Elf64_Sword;$/;"	typedef	line:4
+Elf64_Xword	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef uint64_t Elf64_Xword;$/;"	typedef	line:5
+Elf64_Sxword	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef	int64_t  Elf64_Sxword;$/;"	typedef	line:6
+Elf64_Addr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef uint64_t Elf64_Addr;$/;"	typedef	line:7
+Elf64_Off	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^typedef uint64_t Elf64_Off;$/;"	typedef	line:8
+EI_NIDENT	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define EI_NIDENT /;"	macro	line:10
+PROT_READ	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PROT_READ	/;"	macro	line:12
+PROT_WRITE	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PROT_WRITE	/;"	macro	line:13
+PROT_EXEC	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PROT_EXEC	/;"	macro	line:14
+PROT_NONE	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PROT_NONE	/;"	macro	line:15
+PT_DYNAMIC	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PT_DYNAMIC /;"	macro	line:18
+PT_PHDR	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PT_PHDR /;"	macro	line:19
+PT_LOAD	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PT_LOAD /;"	macro	line:20
+PT_GNU_STACK	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define PT_GNU_STACK /;"	macro	line:21
+SHT_SYMTAB	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define SHT_SYMTAB /;"	macro	line:23
+SHT_STRTAB	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define SHT_STRTAB /;"	macro	line:24
+SHT_DYNAMIC	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define SHT_DYNAMIC /;"	macro	line:25
+DT_PLTRELSZ	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_PLTRELSZ /;"	macro	line:27
+DT_SYMTAB	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_SYMTAB /;"	macro	line:28
+DT_RELA	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_RELA /;"	macro	line:29
+DT_RELASZ	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_RELASZ /;"	macro	line:30
+DT_SYMENT	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_SYMENT /;"	macro	line:31
+DT_INIT	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_INIT /;"	macro	line:32
+DT_JMPREL	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define DT_JMPREL /;"	macro	line:33
+R_X86_64_GLOB_DAT	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define R_X86_64_GLOB_DAT /;"	macro	line:35
+R_X86_64_JUMP_SLOT	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define R_X86_64_JUMP_SLOT /;"	macro	line:36
+R_X86_64_RELATIVE	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define R_X86_64_RELATIVE /;"	macro	line:37
+file_d	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  char* file_d;          \/*File descriptor of open library*\/$/;"	member	line:41	struct:__anon1
+entry	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr entry;      \/*Entry point indicated by ELF header*\/$/;"	member	line:42	struct:__anon1
+phnum	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half phnum;      \/*Number of program headers*\/$/;"	member	line:43	struct:__anon1
+dyn_vaddr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr dyn_vaddr;  \/*p_vaddr value of dynamic program header*\/$/;"	member	line:44	struct:__anon1
+dyn_num_ents	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  int dyn_num_ents;      \/*Number of Dynamic table entries*\/$/;"	member	line:45	struct:__anon1
+dyn_num	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  int dyn_num;           \/*Program header number of dynamic program header*\/$/;"	member	line:46	struct:__anon1
+pht_vaddr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr pht_vaddr;  \/*Virtual address of the program header table*\/$/;"	member	line:47	struct:__anon1
+stack_state	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word stack_state;  \/*Permissions of the stack*\/$/;"	member	line:48	struct:__anon1
+start_of_mapping	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr start_of_mapping;$/;"	member	line:49	struct:__anon1
+end_of_mapping	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr end_of_mapping;$/;"	member	line:50	struct:__anon1
+base_addr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr base_addr;$/;"	member	line:51	struct:__anon1
+string_table	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr string_table;$/;"	member	line:52	struct:__anon1
+symbol_table	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr symbol_table;$/;"	member	line:53	struct:__anon1
+num_sym_entry	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  int num_sym_entry;$/;"	member	line:54	struct:__anon1
+link_info	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} link_info;$/;"	typedef	line:55	typeref:struct:__anon1
+e_ident	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  unsigned char	e_ident[EI_NIDENT];	\/* Magic number and other info *\/$/;"	member	line:59	struct:__anon2
+e_type	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_type;			\/* Object file type *\/$/;"	member	line:60	struct:__anon2
+e_machine	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_machine;		\/* Architecture *\/$/;"	member	line:61	struct:__anon2
+e_version	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	e_version;		\/* Object file version *\/$/;"	member	line:62	struct:__anon2
+e_entry	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr	e_entry;		\/* Entry point virtual address *\/$/;"	member	line:63	struct:__anon2
+e_phoff	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Off	e_phoff;		\/* Program header table file offset *\/$/;"	member	line:64	struct:__anon2
+e_shoff	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Off	e_shoff;		\/* Section header table file offset *\/$/;"	member	line:65	struct:__anon2
+e_flags	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	e_flags;		\/* Processor-specific flags *\/$/;"	member	line:66	struct:__anon2
+e_ehsize	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_ehsize;		\/* ELF header size in bytes *\/$/;"	member	line:67	struct:__anon2
+e_phentsize	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_phentsize;		\/* Program header table entry size *\/$/;"	member	line:68	struct:__anon2
+e_phnum	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_phnum;		\/* Program header table entry count *\/$/;"	member	line:69	struct:__anon2
+e_shentsize	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_shentsize;		\/* Section header table entry size *\/$/;"	member	line:70	struct:__anon2
+e_shnum	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_shnum;		\/* Section header table entry count *\/$/;"	member	line:71	struct:__anon2
+e_shstrndx	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Half	e_shstrndx;		\/* Section header string table index *\/$/;"	member	line:72	struct:__anon2
+Elf_header	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} Elf_header;$/;"	typedef	line:73	typeref:struct:__anon2
+sh_name	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	sh_name;		\/* Section name (string tbl index) *\/$/;"	member	line:77	struct:__anon3
+sh_type	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	sh_type;		\/* Section type *\/$/;"	member	line:78	struct:__anon3
+sh_flags	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	sh_flags;		\/* Section flags *\/$/;"	member	line:79	struct:__anon3
+sh_addr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr	sh_addr;		\/* Section virtual addr at execution *\/$/;"	member	line:80	struct:__anon3
+sh_offset	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Off	sh_offset;		\/* Section file offset *\/$/;"	member	line:81	struct:__anon3
+sh_size	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	sh_size;		\/* Section size in bytes *\/$/;"	member	line:82	struct:__anon3
+sh_link	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	sh_link;		\/* Link to another section *\/$/;"	member	line:83	struct:__anon3
+sh_info	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	sh_info;		\/* Additional section information *\/$/;"	member	line:84	struct:__anon3
+sh_addralign	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	sh_addralign;		\/* Section alignment *\/$/;"	member	line:85	struct:__anon3
+sh_entsize	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	sh_entsize;		\/* Entry size if section holds table *\/$/;"	member	line:86	struct:__anon3
+Elf_Section_header	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} Elf_Section_header;$/;"	typedef	line:87	typeref:struct:__anon3
+st_name	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	st_name;		\/* Symbol name (string tbl index) *\/$/;"	member	line:91	struct:__anon4
+st_info	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  unsigned char	st_info;		\/* Symbol type and binding *\/$/;"	member	line:92	struct:__anon4
+st_other	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  unsigned char st_other;		\/* Symbol visibility *\/$/;"	member	line:93	struct:__anon4
+st_shndx	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  uint16_t	st_shndx;		\/* Section index *\/$/;"	member	line:94	struct:__anon4
+st_value	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr	st_value;		\/* Symbol value *\/$/;"	member	line:95	struct:__anon4
+st_size	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	st_size;		\/* Symbol size *\/$/;"	member	line:96	struct:__anon4
+Elf_Symtab_ent	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} Elf_Symtab_ent;$/;"	typedef	line:97	typeref:struct:__anon4
+p_type	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	p_type;			\/* Segment type *\/$/;"	member	line:101	struct:__anon5
+p_flags	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Word	p_flags;		\/* Segment flags *\/$/;"	member	line:102	struct:__anon5
+p_offset	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Off	p_offset;		\/* Segment file offset *\/$/;"	member	line:103	struct:__anon5
+p_vaddr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr	p_vaddr;		\/* Segment virtual address *\/$/;"	member	line:104	struct:__anon5
+p_paddr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr	p_paddr;		\/* Segment physical address *\/$/;"	member	line:105	struct:__anon5
+p_filesz	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	p_filesz;		\/* Segment size in file *\/$/;"	member	line:106	struct:__anon5
+p_memsz	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	p_memsz;		\/* Segment size in memory *\/$/;"	member	line:107	struct:__anon5
+p_align	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Xword	p_align;		\/* Segment alignment *\/$/;"	member	line:108	struct:__anon5
+Elf64_Program_header	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} Elf64_Program_header;$/;"	typedef	line:109	typeref:struct:__anon5
+d_tag	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Sxword d_tag;$/;"	member	line:113	struct:__anon6
+d_val	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^    Elf64_Xword d_val;$/;"	member	line:116	union:__anon6::__anon7
+d_ptr	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^    Elf64_Addr d_ptr;$/;"	member	line:117	union:__anon6::__anon7
+d_un	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  } d_un;$/;"	member	line:118	struct:__anon6	typeref:union:__anon6::__anon7
+Elf64_Dyn	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} Elf64_Dyn;$/;"	typedef	line:119	typeref:struct:__anon6
+mapstart	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr mapstart, mapend, dataend, allocend;$/;"	member	line:123	struct:__anon8
+mapend	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr mapstart, mapend, dataend, allocend;$/;"	member	line:123	struct:__anon8
+dataend	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr mapstart, mapend, dataend, allocend;$/;"	member	line:123	struct:__anon8
+allocend	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Addr mapstart, mapend, dataend, allocend;$/;"	member	line:123	struct:__anon8
+mapoff	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  Elf64_Off mapoff;$/;"	member	line:124	struct:__anon8
+prot	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^  int prot;$/;"	member	line:125	struct:__anon8
+command	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} command;$/;"	typedef	line:126	typeref:struct:__anon8
+r_offset	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^        Elf64_Addr      r_offset;$/;"	member	line:130	struct:__anon9
+r_info	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^        Elf64_Xword     r_info;$/;"	member	line:131	struct:__anon9
+r_addend	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^        Elf64_Sxword    r_addend;$/;"	member	line:132	struct:__anon9
+Elf64_Rela	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^} Elf64_Rela;$/;"	typedef	line:133	typeref:struct:__anon9
+ELF64_R_SYM	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define ELF64_R_SYM(/;"	macro	line:135
+ELF64_R_TYPE	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define ELF64_R_TYPE(/;"	macro	line:136
+ELF64_R_INFO	/home/nikhil/Enclave-DLL/Enclave/Enclave.h	/^#define ELF64_R_INFO(/;"	macro	line:137
+Enclave-DLL	/home/nikhil/Enclave-DLL/README.md	/^# Enclave-DLL/;"	function	line:1
